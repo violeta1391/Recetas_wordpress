@@ -1,0 +1,206 @@
+*{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+body{
+	font-family: "Oswald",sans-serif;
+}
+
+#contenedor{
+	width: 1000px;
+	margin: 0 auto;
+}
+#encabezado{
+	font-size: 0;
+	text-align: justify;
+}
+#encabezado:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+#encabezado .logo{
+	display: inline-block;
+	vertical-align: middle;
+}
+#encabezado nav{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+}
+#encabezado nav ul{
+	padding-left: 0;
+}
+#encabezado nav ul li{
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+}
+#encabezado nav ul li a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	-webkit-transition:all .15s linear;
+	   -moz-transition:all .15s linear;
+		-ms-transition:all .15s linear;
+		 -o-transition:all .15s linear;
+		    transition:all .15s linear;
+}
+#encabezado nav ul li a:hover{
+	color: #c069a6;
+}
+h2{
+	font-size: 24px;
+	color: #c06969;
+	letter-spacing: 1px;
+}
+h3{
+	font-size: 22px;
+	letter-spacing: 1px;
+	margin-top: 0;
+}
+p{
+	font-family: Helvetica;
+	font-size: 15px;
+	line-height: 1.5;
+}
+#lista-recetas{
+	border-top: 1px dotted #ccc;
+	margin-bottom: 100px;
+	padding-top: 30px;
+}
+#lista-recetas .informacion{
+	font-size: 12px;
+	color: #c069a6;
+
+}
+.receta-listada{
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.receta-listada img{
+	float: left;
+	margin-right: 20px;
+}
+.receta-listada a{
+	background-color: #c0698a;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	padding: 5px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	letter-spacing: 1px;
+	-webkit-transition:all .15s linear;
+	   -moz-transition:all .15s linear;
+		-ms-transition:all .15s linear;
+		 -o-transition:all .15s linear;
+		    transition:all .15s linear;
+}
+.receta-listada a:hover{
+	background-color: #444;
+}
+#pie-de-pagina{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 12px;
+}
+#columnas{
+	font-size: 0;
+}
+#columnas #contenido-izquierda{
+	font-size: 16px;
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 40px;
+}
+#columnas #barra-lateral{
+	font-size: 16px;
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+#columnas #barra-lateral h4{
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+}
+#columnas #barra-lateral img{
+	display: block;
+	margin: 0 auto;
+}
+.suscripcion-boletin{
+	background-color: #c069aa;
+	color: white;
+	padding: 10px 20px 20px;
+	font-size: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+.suscripcion-boletin  p{
+	letter-spacing: 1px;
+}
+.suscripcion-boletin input{
+	font-size: 15px;
+	border: none;
+	background: white;
+	border-radius: 0;
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 3%;
+	display: inline-block;
+	vertical-align: top;
+	color: black;
+	height: 40px;
+	padding-left: 10px;
+}
+.suscripcion-boletin input[type="submit"]{
+	width: 30%;
+	text-transform: uppercase;
+}
+@media (max-width:1000px){
+	#contenedor{
+		width: 100%;
+		padding: 0 20px;
+	}
+}
+@media (max-width:640px){
+	.logo{
+		width: 100%;
+	}
+	.logo img,
+	#columnas #barra-lateral{
+		display: block;
+		margin: 20px auto;
+		max-width: 300px;
+	}
+	nav{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	nav ul li{
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	img{
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+	#columnas #barra-lateral,
+	#columnas #contenido-izquierda{
+		width: 100%;
+		padding: 0;
+	}
+}
